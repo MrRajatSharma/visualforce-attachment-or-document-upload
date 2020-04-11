@@ -1,0 +1,30 @@
+<apex:page standardStylesheets="false" lightningStylesheets="true" Controller="Upload">
+	<apex:slds />
+	<div class="slds-scope">
+		<apex:sectionHeader title="Upload Example" />
+		<apex:form enctype="multipart/form-data">
+			<apex:pageMessages />
+			<apex:pageBlock mode="mainDetail">
+				<details open="open">
+					<summary class="pbSubheader brandTertiaryBgr tertiaryPalette">Company Details</summary>
+					<table border="1" class="slds-vf-data-table" style="border: none;">
+						<tr class="headerRow">
+							<td colspan="3">
+								List of Documents to be submitted (if applicable):
+								<br />
+								<!-- file -->
+								<apex:outputLabel value="Attachment" for="file" />
+								<apex:inputFile value="{!attachment.body}" filename="attachment" />
+							</td>
+						</tr>
+					</table>
+				</details>
+                <br />
+                <apex:pageBlockButtons>
+                    <apex:commandButton action="{!save}" value="Save" styleClass="slds-button slds-button_brand" />
+                    <apex:commandButton action="{!cancel}" value="Cancel" />
+                </apex:pageBlockButtons>
+			</apex:pageBlock>
+		</apex:form>
+	</div>
+</apex:page>
