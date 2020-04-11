@@ -2,7 +2,7 @@
 
 ---
 ## Setup
-Either use this whole project in salesforce CLI using visual studio code or Copy Upload.cls and Upload.page to salesforce apex class and visualforce page respectively.
+Either use this whole project in salesforce CLI using visual studio code or Copy [Upload.cls](https://github.com/MrRajatSharma/visualforce-attachment-or-document-upload/blob/master/force-app/main/default/classes/Upload.cls) and [Upload.page](https://github.com/MrRajatSharma/visualforce-attachment-or-document-upload/blob/master/force-app/main/default/pages/Upload.page) to salesforce apex class and visualforce page respectively.
 
 ## Steps to enable Note and Attachment in sObject or custom object in salesforce
 1. Login to salesforce using developer account
